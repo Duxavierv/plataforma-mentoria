@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Mentoria | MentoriaPro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f6fc;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #111827;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .booking-container {
+            max-width: 700px;
+            margin: 55px auto;
+        }
+
+        .booking-card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+        }
+
+        .booking-title {
+            color: #111827;
+            font-weight: bold;
+        }
+
+        .mentor-info {
+            background: #f0efff;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .btn-primary {
+            background: #635bff;
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background: #5148e5;
+        }
+
+        .form-control, .form-select {
+            padding: 11px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">MentoriaPro</a>
+        <a href="mentores.html" class="btn btn-outline-light btn-sm">
+            Voltar aos mentores
+        </a>
+    </div>
+</nav>
+
+<div class="container booking-container">
+
+    <div class="booking-card">
+
+        <h2 class="booking-title mb-2">Solicitar mentoria</h2>
+
+        <p class="text-muted mb-4">
+            Preencha os dados abaixo para solicitar seu encontro com o mentor.
+        </p>
+
+        <div class="mentor-info">
+            <h5 class="mb-1">Mentor Exemplo</h5>
+            <span class="text-muted">Desenvolvimento Java</span>
+            <div class="mt-2">
+                <strong>Valor por hora: R$ 50,00</strong>
+            </div>
+        </div>
+
+        <form id="formAgendamento">
+
+            <div class="mb-3">
+                <label for="data" class="form-label">Data da mentoria</label>
+                <input type="date" class="form-control" id="data" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="horarioInicio" class="form-label">Horário de início</label>
+                <input type="time" class="form-control" id="horarioInicio" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="horarioFim" class="form-label">Horário de término</label>
+                <input type="time" class="form-control" id="horarioFim" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="observacoes" class="form-label">
+                    O que você gostaria de conversar com o mentor?
+                </label>
+                <textarea
+                    class="form-control"
+                    id="observacoes"
+                    rows="4"
+                    placeholder="Descreva seu objetivo ou sua dúvida..."
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+                Solicitar agendamento
+            </button>
+
+            <div class="text-center mt-3">
+                <a href="mentores.html" class="text-decoration-none">
+                    Cancelar
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<script>
+    document.getElementById("formAgendamento").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Tela de demonstração: o agendamento ainda não está conectado ao banco de dados.");
+    });
+</script>
+
+</body>
+</html>

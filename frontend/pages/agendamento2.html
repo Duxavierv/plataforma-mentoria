@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Agendamentos | MentoriaPro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f6fc;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #111827;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .page-container {
+            max-width: 950px;
+            margin: 50px auto;
+        }
+
+        .appointment-card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            margin-bottom: 18px;
+        }
+
+        .status {
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .confirmed {
+            background: #d1e7dd;
+            color: #0f5132;
+        }
+
+        .refused {
+            background: #f8d7da;
+            color: #842029;
+        }
+
+        .cancelled {
+            background: #e2e3e5;
+            color: #41464b;
+        }
+
+        .btn-primary {
+            background: #635bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #5148e5;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">MentoriaPro</a>
+
+        <a href="mentores.html" class="btn btn-outline-light btn-sm">
+            Buscar mentores
+        </a>
+    </div>
+</nav>
+
+<div class="container page-container">
+
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <h2 class="fw-bold">Meus agendamentos</h2>
+            <p class="text-muted mb-0">
+                Acompanhe suas solicitações de mentoria.
+            </p>
+        </div>
+
+        <a href="mentores.html" class="btn btn-primary">
+            + Novo agendamento
+        </a>
+    </div>
+
+    <!-- Agendamento pendente -->
+    <div class="appointment-card">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+            <div>
+                <h5 class="fw-bold mb-1">Mentor Exemplo</h5>
+                <p class="text-muted mb-3">Desenvolvimento Java</p>
+            </div>
+
+            <span class="status pending">Pendente</span>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Data</small>
+                <p class="mb-0 fw-semibold">25/11/2026</p>
+            </div>
+
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Horário</small>
+                <p class="mb-0 fw-semibold">14:00 às 15:00</p>
+            </div>
+
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Valor</small>
+                <p class="mb-0 fw-semibold">R$ 50,00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agendamento confirmado -->
+    <div class="appointment-card">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+            <div>
+                <h5 class="fw-bold mb-1">Mentora Exemplo</h5>
+                <p class="text-muted mb-3">Gestão de Projetos</p>
+            </div>
+
+            <span class="status confirmed">Confirmado</span>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Data</small>
+                <p class="mb-0 fw-semibold">28/11/2026</p>
+            </div>
+
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Horário</small>
+                <p class="mb-0 fw-semibold">10:00 às 11:00</p>
+            </div>
+
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Valor</small>
+                <p class="mb-0 fw-semibold">R$ 70,00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agendamento recusado -->
+    <div class="appointment-card">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+            <div>
+                <h5 class="fw-bold mb-1">Mentor Exemplo 2</h5>
+                <p class="text-muted mb-3">Banco de Dados</p>
+            </div>
+
+            <span class="status refused">Recusado</span>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Data</small>
+                <p class="mb-0 fw-semibold">20/11/2026</p>
+            </div>
+
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Horário</small>
+                <p class="mb-0 fw-semibold">16:00 às 17:00</p>
+            </div>
+
+            <div class="col-md-4 mb-2">
+                <small class="text-muted">Valor</small>
+                <p class="mb-0 fw-semibold">R$ 60,00</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

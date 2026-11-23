@@ -65,7 +65,7 @@ Para executar o projeto localmente, é necessário:
 Após iniciar o Apache e o MySQL no XAMPP, acessar:
 
 ```text
-http://localhost/plataforma-mentoria/
+http://localhost/plataforma-mentoria/frontend/
 ```
 
 **Observação:** o endereço poderá variar conforme a organização dos arquivos no ambiente local.
